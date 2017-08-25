@@ -1,0 +1,22 @@
+[alias]
+  c = "commit"
+  cob = "checkout -b"
+  l = log -n15 --color --graph --pretty=format:'%Cred%h%Creset - %Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  sh = "shalector"
+[core]
+	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[github]
+	user = kayiwa
+[help]
+  autocorrect = 1
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+  coloredwithrefs = format:%Cred%h%Creset %Cblue%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[pull]
+  rebase = true
+[user]
+  name = Francis Kayiwa
+  email = kayiwa@pobox.com
