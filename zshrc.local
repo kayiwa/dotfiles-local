@@ -1,2 +1,4 @@
 # the fuck
 eval $(thefuck --alias)
+# plenv
+eval "$(plenv init - zsh)"
