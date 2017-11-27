@@ -2,5 +2,6 @@
 eval $(thefuck --alias)
 # plenv
 eval "$(plenv init - zsh)"
-# iterm2 intergration
+<<<<<<< HEAD
+# iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
