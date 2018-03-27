@@ -10,3 +10,6 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PKG_PATH=https://cloudflare.cdn.openbsd.org/pub/OpenBSD/snapshots/packages/amd64:ftp://ftp5.usa.openbsd.org/pub/OpenBSD/snapshots/packages/amd64
 export RELEASEPATH=/usr/rel
 export LC_CTYPE="en_US.UTF-8"
+# python 2 venv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
