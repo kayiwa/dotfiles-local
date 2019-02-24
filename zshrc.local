@@ -1,5 +1,7 @@
 # the fuck
-eval $(thefuck --alias)
+if which thefuck &> /dev/null ; then
+  eval $(thefuck --alias)
+fi
 # plenv
 if which plenv &>/dev/null ; then
   eval "$(plenv init - zsh)"
