@@ -1,7 +1,13 @@
 # the fuck
 eval $(thefuck --alias)
 # plenv
-eval "$(plenv init - zsh)"
+if which plenv &>/dev/null ; then
+  eval "$(plenv init - zsh)"
+fi
+# pyenv
+if which pyenv &>/dev/null ; then
+  eval "$(pyenv init -)"
+fi
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 # python homebrew
