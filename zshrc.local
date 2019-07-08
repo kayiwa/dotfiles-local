@@ -10,6 +10,10 @@ fi
 if which pyenv &>/dev/null ; then
   eval "$(pyenv init -)"
 fi
+# rbenv
+if which rbenv &>/dev/null ; then
+    eval "$(rbenv init -)"
+fi
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 # python homebrew
@@ -33,3 +37,5 @@ function ssht(){
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
+## hola exa
+alias ll='exa -al'
