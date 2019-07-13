@@ -12,7 +12,7 @@ if which pyenv &>/dev/null ; then
 fi
 # rbenv
 if which rbenv &>/dev/null ; then
-    eval "$(rbenv init -)"
+    eval "$(rbenv init - zsh)"
 fi
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
