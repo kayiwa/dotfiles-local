@@ -39,3 +39,5 @@ if type nvim > /dev/null 2>&1; then
 fi
 ## hola exa
 alias ll='exa -al'
+## last-pass ansible
+export ANSIBLE_VAULT_PASSWORD_FILE=`command -v lastpass-ansible`
