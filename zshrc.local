@@ -10,6 +10,10 @@ fi
 if which pyenv &>/dev/null ; then
   eval "$(pyenv init -)"
 fi
+# virtualenv
+if [[ -n $VIRTUAL_ENV && -e "${VIRTUAL_ENV}/bin/activate" ]]; then
+  source "${VIRTUAL_ENV}/bin/activate"
+fi
 # rbenv
 if which rbenv &>/dev/null ; then
     eval "$(rbenv init - zsh)"
@@ -39,5 +43,5 @@ if type nvim > /dev/null 2>&1; then
 fi
 ## hola exa
 alias ll='exa -al'
-## last-pass ansible
-export ANSIBLE_VAULT_PASSWORD_FILE=`command -v lastpass-ansible`
+# use nvim 
+export EDITOR=nvim
