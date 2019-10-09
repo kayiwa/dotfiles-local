@@ -18,6 +18,10 @@ fi
 if which rbenv &>/dev/null ; then
     eval "$(rbenv init - zsh)"
 fi
+# nodeenv
+if which nodenv %>/dev/null ; then
+    eval "$(nodenv init -)"
+fi
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 # python homebrew
